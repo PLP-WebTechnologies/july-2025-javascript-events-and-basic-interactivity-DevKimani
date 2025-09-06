@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page Features</h1>
+    </header>
+
+    <main>
+        <section class="event-handling-section">
+            <h2>Part 1: JavaScript Event Handling</h2>
+            <div class="event-demo">
+                <button id="clickMeBtn">Click Me!</button>
+                <p id="clickMessage" class="hidden">Button clicked!</p>
+            </div>
+            <div class="event-demo">
+                <div id="hoverBox">Hover Over Me</div>
+                <p id="hoverMessage" class="hidden">You're hovering!</p>
+            </div>
+            <div class="event-demo">
+                <input type="text" id="keyInput" placeholder="Type something...">
+                <p id="keyMessage">Last key pressed: </p>
+            </div>
+        </section>
+
+        <section class="interactive-elements-section">
+            <h2>Part 2: Building Interactive Elements</h2>
+
+            <!-- Light/Dark Mode Toggle -->
+            <div class="interactive-feature">
+                <h3>Light/Dark Mode Toggle</h3>
+                <button id="themeToggle">Toggle Dark Mode</button>
+            </div>
+
+            <!-- Simple Counter -->
+            <div class="interactive-feature">
+                <h3>Simple Counter</h3>
+                <button id="decrementBtn">-</button>
+                <span id="counterDisplay">0</span>
+                <button id="incrementBtn">+</button>
+            </div>
+
+            <!-- Collapsible FAQ Section -->
+            <div class="interactive-feature">
+                <h3>Collapsible FAQ</h3>
+                <div class="faq-item">
+                    <button class="faq-question">What is JavaScript?</button>
+                    <div class="faq-answer hidden">JavaScript is a programming language that enables interactive web pages.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How does DOM manipulation work?</button>
+                    <div class="faq-answer hidden">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-validation-section">
+            <h2>Part 3: Form Validation with JavaScript</h2>
+            <form id="myForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div class="error-message" id="confirmPasswordError"></div>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formSuccess" class="success-message hidden">Form submitted successfully!</div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
